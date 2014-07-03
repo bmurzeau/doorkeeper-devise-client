@@ -1,7 +1,12 @@
 # Be sure to restart your server when you modify this file.
 
-# Your secret key for verifying the integrity of signed cookies.
+# Your secret key is used for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
+
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-DoorkeeperDeviseClient::Application.config.secret_token = '4c8e2af4d0a13797cbedba84c7f2908a5bb901e7408614cfe693be5b6580539b676e07f065c353de851fb0ee54bb0864db28d8643c46875657e9143175c0fc21'
+# You can use `rake secret` to generate a secure secret key.
+
+# Make sure your secret_key_base is kept private
+# if you're sharing your code publicly.
+DoorkeeperDeviseClient::Application.config.secret_key_base = '939276692df98ccd7e4beeaeb0906a4416c8126f025f966bc32a72e5222a2caddabda5bddcaaeb4b08d1a7cd3aa019e82425d562e4cb66def8ef5103cc937172'

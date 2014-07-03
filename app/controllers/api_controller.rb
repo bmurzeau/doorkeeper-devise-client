@@ -1,8 +1,9 @@
 class ApiController < ApplicationController
-  respond_to :json
+  respond_to :html
 
   def explore
-    @json = doorkeeper_access_token.get("api/v1/#{params[:api]}").parsed
-    respond_with @json
+    @user = predicsis_access_token.get("http://api.predicsis.io/users/#{params[:api]}").parsed
+    binding.pry
+    render template: 'home/profile'
   end
 end
