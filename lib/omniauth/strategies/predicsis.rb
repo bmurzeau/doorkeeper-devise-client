@@ -4,7 +4,7 @@ module OmniAuth
       option :name, :predicsis
 
       option :client_options, {
-        :site => "http://id.predicsis.io",
+        :site => "http://localhost:3002",
         :authorize_path => "/oauth/authorize"
       }
 
@@ -19,7 +19,7 @@ module OmniAuth
       end
 
       def raw_info
-        @raw_info ||= access_token.get('http://api.predicsis.io/users/me').parsed
+        @raw_info ||= access_token.get('http://localhost:3001/users/me').parsed
       end
     end
   end

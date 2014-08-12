@@ -28,6 +28,6 @@ DoorkeeperDeviseClient::Application.configure do
   config.assets.debug = true
 end
 
-PREDICSIS_APP_ID = "a1fe436e0652dfea9a1d062d689a934072b438f4206f53ade470d697e1c9b74d"
-PREDICSIS_APP_SECRET = "d33d8a0f61de20abd67b01c5331ea5060d42bac7e95eec7e8b58b109b3b43de2"
-PREDICSIS_APP_URL = "http://id.predicsis.io"
+PREDICSIS_APP_ID = "aa6b4eed8bf2f615b10df70eeb5663fbc1a396a9f68d91ed4b0acf621a5611e2"
+PREDICSIS_APP_SECRET = "8d641bc46425ba40e61af114c8b2125f5fa021d0e1bb1f0be1273557aee347c7"
+PREDICSIS_APP_URL = "http://localhost:3002"
